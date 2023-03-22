@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import './Main.scss'
 
-const Main = () => {
+const Main = (props) => {
 
     return (
         <div className="main">
-            Main
+            <button onClick={() => props.onMenuLinkClick({id: '02', adress: 'about'})}>toAbout</button>
         </div>
     )
 }

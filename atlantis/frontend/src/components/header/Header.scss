@@ -1,10 +1,13 @@
 @media(max-width: 899px){
     .header{
+        position: fixed;
+        z-index: 100;
+        width: calc(100% - 20px);
         display: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
+        margin: 10px;
         padding-right: 20px;
         &__img{
             display: block;
@@ -27,10 +30,12 @@
             content: '';
             bottom: 0;
             width: 40%;
+            transition: 0.5s;
         }
         &::before{
             top: 0;
             content: '';
+            transition: 0.5s;
         }
         & span{
             top: 8px;

@@ -9,11 +9,7 @@ const menuReducer = (state = initialState, action) => {
     switch(action.type) {
         case UPDATE_MENU:
             newState = {...state}
-            if(newState.menuIsOpened){
-                newState.menuIsOpened = false
-            } else {
-                newState.menuIsOpened = true
-            }
+                newState.menuIsOpened = action.menuIsOpened
             return newState
         default:
             return state

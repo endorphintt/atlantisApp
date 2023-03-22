@@ -1,0 +1,15 @@
+@media(min-width: 900px) {
+    .app__content{
+        display: flex;
+    }
+}
+
+@media(max-width: 899px){
+    .app__content{
+        padding-top: 70px;
+    }
+}
+
+.app{
+    background-color: gray;
+}
