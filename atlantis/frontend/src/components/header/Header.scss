@@ -1,7 +1,7 @@
 @media(max-width: 899px){
     .header{
         position: fixed;
-        z-index: 100;
+        z-index: 400;
         width: calc(100% - 20px);
         display: none;
         display: flex;
@@ -22,7 +22,7 @@
         & span, &::after, &::before{
             height: 2px;
             width: 100%;
-            background-color: rgba(183, 152, 64, 1);
+            background-color: rgb(67, 77, 176);
             position: absolute;
             right: 0;
         }

@@ -10,7 +10,7 @@ const Header = (props) => {
     
     return (
         <div className="header">
-            <img onClick={() => navigate(MAIN_ROUTE)} src="img/goldAtlantis2Small.png" alt="" className="header__img" />
+            <img onClick={() => navigate(MAIN_ROUTE)} src="img/blueAtlantisLogo.png" alt="" className="header__img" />
             <div onClick={props.updateMenu} className={props.menu ? `menu__icon active` : 'menu__icon'} >
                 <span></span>
             </div>          

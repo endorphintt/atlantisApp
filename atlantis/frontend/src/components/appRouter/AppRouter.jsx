@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import {publicRoutes, authRoutes} from "./routes"
+import './AppRouter.scss'
 
 const AppRouter = (props) => {
     const user = {
