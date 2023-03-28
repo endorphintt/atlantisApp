@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Vollkorn:ital,wght@0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.mainAbout{
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title{
+        position: relative;
+        text-align: center;
+        padding: 50px;
+        margin: 0 auto;
+        font-size: 40px;
+        color: black;
+        font-family: 'Vollkorn', serif;
+        background-size: 100% 3px, 100% 3px, 3px 30%;
+        position: relative;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+        background-repeat: no-repeat;
+        font-weight: 700;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 100px;
+            background-color: rgb(28, 71, 117);
+            bottom: 30px;
+            left: calc(50% - 50px); 
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    &__text{
+        position: relative;
+        margin-top: 50px;
+        width: 40%;
+        text-shadow: 2px 2px 4px #999999;
+        padding: 20px;
+        font-family: 'Vollkorn', serif;
+        font-size: 16px;
+        background: linear-gradient(to right, #000 0, #000 10%, transparent 10%, transparent 90%), linear-gradient(to right, transparent 0, transparent 90%, #000 80%, #000 100%), linear-gradient(to bottom, #000 0, #000 100%);
+        background-size: 100% 3px, 100% 3px, 3px 10%;
+        position: relative;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+        background-repeat: no-repeat;
+        color: #4d4c4c;
+        &:after{
+            content: '';
+            position: absolute;
+            height: 10%;
+            width: 3px;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+        }
+        margin-bottom: 100px;
+    }
+    &__photo_container{
+        width: 40%;
+        & img{
+            width: 100%;
+            max-width: 350px;
+        }
+        position: relative;
+    }
+    &__guarantee_container{
+        position: absolute;
+        border: 1px solid rgb(154, 145, 51);
+        background-color: white;
+        position: absolute;
+        width: 75%;
+        height: 20%;
+        bottom: -10%;
+        left: -20%;
+        padding: 5px;
+        box-shadow: 0px 0px 10px 5px rgb(28, 71, 117);
+        background-color: transparent;
+    }
+    &__guarantee{
+        background-color: rgba(28, 71, 117, 0.5);
+        height: 100%;
+        width: 100% ;
+        font-size: 23px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        & img{
+            position: absolute;
+            bottom: 40px;
+            right: -200px;
+            width: 300px;
+        }
+        color: white;
+        font-family: 'Marck Script', cursive;
+    } 
+    &__button{
+        margin-top: 60px;
+    }           
+}
+
+@media(min-width: 900px){
+    .mainAbout{
+        padding-left: 150px;
+    }
+}
+
+@media(max-width: 750px){
+    .mainAbout__content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainAbout__text{
+        width: 90%;
+    }
+    .mainAbout__photo_container{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .mainAbout__guarantee_container{
+        left: -10px;
+        max-width: 300px;       
+    }
+    .mainAbout__guarantee{
+        font-size: 16px;
+        & img{
+            width: 200px;
+            left: 20px;
+        }
+    }
+    .mainAbout__button{
+        margin-top: 60px;
+        & button{           
+            padding: 10px 30px 10px 30px;
+        }
+    } 
+    .mainAbout__title{
+        font-size: 33px;
+    }
+}

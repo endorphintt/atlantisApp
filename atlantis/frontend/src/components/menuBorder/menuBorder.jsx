@@ -5,9 +5,9 @@ import './MenuBorder.scss'
 const MenuBorder = (props) => {
     const links = [
         {adress: 'main', name: 'ГЛАВНАЯ', id: '01'},
+        {adress: 'offers', name: 'НАШИ УСЛУГИ', id: '04'},
         {adress: 'about', name: 'О НАС', id: '02'},
         {adress: 'blog', name: 'БЛОГ', id: '03'},
-        {adress: 'offers', name: 'НАШИ УСЛУГИ', id: '04'},
         {adress: 'login', name: 'ЛОГИН', id: '05'},
     ]
 

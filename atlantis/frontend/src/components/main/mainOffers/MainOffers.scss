@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Vollkorn:ital,wght@0,500;1,400;1,500&display=swap');
+
+.MainOffers{
+    background: url('./sign.png') no-repeat 50px 200px /50%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        position: relative;
+        width: 370px;
+        text-align: center;
+        padding: 50px;
+        margin: 0 auto;
+        font-size: 40px;
+        color: black;
+        font-family: 'Vollkorn', serif;
+        background-size: 100% 3px, 100% 3px, 3px 30%;
+        position: relative;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+        background-repeat: no-repeat;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 100px;
+            background-color: rgb(28, 71, 117);
+            bottom: 30px;
+            left: calc(50% - 50px); 
+        }
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1050px;
+    }
+    &__item_container{
+        box-shadow: 0px 0px 10px 5px rgb(28, 71, 117);
+        width: 45%;
+        max-width: 400px;
+        margin: 10px;
+        padding: 5px;
+        &:hover{
+            box-shadow: 0px 0px 10px 5px rgb(146, 187, 232);
+        }
+        transition: 1s;
+        background-color: white;
+    }
+    &__item{
+        color: antiquewhite;
+        padding: 8px;
+        padding-bottom: 16px;
+        background-color: rgb(28, 71, 117);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &:hover{
+            background-color: rgb(219, 236, 253);
+            color: rgb(28, 71, 117);
+        }
+        transition: 1s;
+    }
+    &__subtitle{
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 40px;
+            background-color: white;
+            bottom: -10px;
+            left: calc(50% - 20px); 
+            transition: 1s;
+        }
+    }
+    &__deskription{
+        text-align: center;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 900px){
+    .MainOffers{
+        padding-left: 150px;
+    }
+}
+
+.MainOffers__item_container:hover .MainOffers__subtitle::after{
+    background-color: rgb(28, 71, 117);
+}
+
+@media(min-width: 601px){
+    .MainOffers__more{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .MainOffers{
+        overflow: hidden;
+        &__item_container{
+            width: 90%;
+        }
+        &__title{
+            padding: 20px;
+            width: 200px;
+            font-size: 33px;
+            &::after{
+                bottom: 15px;
+            }
+            margin-bottom: 30px;
+        }
+        &__items{
+            height: 600px;
+            transition: 1s;
+        }
+        &__items.active{
+            height: 1300px;
+        }
+    }
+    .MainOffers__more{
+        margin-top: 30px;
+        position: relative;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        color: white;
+        border-radius: 25px;
+        width: 70px;
+        background-color: rgb(57, 90, 181);
+        height: 50px;
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 18px;
+            height: 2px;
+            transform: rotate(45deg);
+            top: 26px;
+            right: 24px;
+            transition: 1s;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 18px;
+            height: 2px;
+            transform: rotate(-45deg);
+            top: 26px;
+            right: 12px;
+            transition: 1s;
+        }
+        &.active{
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: white;
+                width: 18px;
+                height: 2px;          
+                top: 26px;
+                right: 12px;
+                transition: 1s;
+                transform: rotate(45deg);
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background-color: white;
+                width: 18px;
+                height: 2px;
+                top: 26px;
+                right: 24px;
+                transition: 1s;
+                transform: rotate(-45deg);               
+            }
+        }
+    }
+}

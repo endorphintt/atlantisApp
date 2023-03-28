@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 @media(min-width: 900px){
     .hi{
         padding-left: 100px;
@@ -9,8 +11,6 @@
     position: relative;
     width: calc(100% - 40px);
     height: 100vh;    
-    // background-image: url('./top.jpg') center center/cover;
-    // backdrop-filter: blur(5px);  
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,7 +23,7 @@
         top: 0;
         bottom: 0;
         z-index: -1;
-        background: url('./top.jpg') center center/cover;
+        background: url('./top.jpg') center center/cover fixed;
         filter: blur(5px);
       }
 }
@@ -52,8 +52,8 @@
 }
 
 .hi__subtitle {
-	font-size: 20px;
-	font-family:  Verdana, cursive;
+	font-size: 25px;
+	font-family: 'Lobster', cursive;
 	padding-top: 20px;
 	text-align: center;
     text-shadow: 2px 2px 4px #999999;
@@ -63,5 +63,8 @@
 @media(max-width: 500px) {
     .hi__title{
         padding: 30px;
+    }
+    .hi__subtitle{
+        font-size: 20px;
     }
 }

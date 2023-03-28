@@ -13,3 +13,11 @@
     background-color: red;
     color: white;
 }
+
+.third-card{
+    & .card_container{
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 400px;
+    }
+}

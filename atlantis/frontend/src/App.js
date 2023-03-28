@@ -6,6 +6,7 @@ import MenuBorder from './components/menuBorder/menuBorder';
 import MenuBurger from './components/menuBurger/MenuBurger';
 import AppRouter from './components/appRouter/AppRouter';
 import Header from './components/header/Header';
+import Call from './components/call/Call';
 
 const App = () => {
   const [menu, setMenu] = useState(false)
@@ -34,6 +35,7 @@ const App = () => {
           <AppRouter onMenuLinkClick={onMenuLinkClick} active={active} setActive={setActive}/>
         </div>
       </div>
+      <Call />
     </div>
   );
 }

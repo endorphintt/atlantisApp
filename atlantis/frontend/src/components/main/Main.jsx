@@ -1,17 +1,27 @@
 import React, { useState } from "react";
+import Footer from "../footer/Footer.jsx";
 import Card from "./card/Card.jsx";
 import Hi from "./hi/Hi";
 import './Main.scss'
+import MainAbout from "./mainAbout/MainAbout.jsx";
+import MainOffers from "./mainOffers/MainOffers.jsx";
+import MainSlider from "./mainSlider/MainSlider.jsx";
+import SecondCard from "./secondCard/SecondCard.jsx";
 
 const Main = (props) => {
 
     return (
         <div className="main">
             <Hi />
-            <Card />
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestiae assumenda totam sapiente atque ullam laboriosam quam maxime. Culpa, numquam neque rem cumque cupiditate ex iure corporis tempore a quidem!
+            <MainOffers/>
+            <Card name={'Запишись на бесплатную консультацию!'}/>
+            <MainAbout />
+            <SecondCard />
+            <MainSlider />
+            <div className="third-card">
+                <Card name={'наши специалисты с юридическим образованием помогут решить вашу проблему качественно и быстро!'}/>
             </div>
+            <Footer/>
         </div>
     )
 }
