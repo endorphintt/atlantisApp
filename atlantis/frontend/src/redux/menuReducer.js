@@ -5,7 +5,6 @@ const initialState = {
 }
 
 const menuReducer = (state = initialState, action) => {
-   
     let newState;
     switch(action.type) {
         case UPDATE_MENU:

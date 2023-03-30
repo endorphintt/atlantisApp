@@ -8,10 +8,9 @@ import store from './redux/redux-store'
 import { createContext } from 'react';
 import { Provider } from 'react-redux';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const MyContext = createContext()
+export const MyContext = createContext()
 
 root.render(
   <BrowserRouter>

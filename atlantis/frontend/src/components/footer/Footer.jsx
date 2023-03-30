@@ -3,6 +3,7 @@ import './Footer.scss'
 import { useState } from "react";
 import FooterBottom from "./footerBottom/FooterBottom";
 
+
 const Footer = () => {
 
     const [name, setName] = useState({name: '', error: false})
@@ -62,8 +63,12 @@ const Footer = () => {
 
     return(
         <div className="footer">
-            <div className="footer__title">Контакт</div>
-            <div className="footer__content">
+            <div
+            
+            className="footer__title">Контакт</div>
+            <div
+            
+            className="footer__content">
                 <div className="footer__info">
                     <div className="footer__number">
                         <div className="footer__number_img"></div>

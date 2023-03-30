@@ -1,10 +1,16 @@
 import React from "react";
 import './SecondCard.scss'
+import { motion } from 'framer-motion'
+import { textAnimation, textAnimation2 } from "../../../animations/animations";
 
 const SecondCard = () => {
     return (
         <div className="secondCard">
-            <div className="secondCard__items">
+            <motion.div
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation}
+            className="secondCard__items">
                 <div className="secondCard__item">
                     1000+
                     довольных
@@ -20,7 +26,7 @@ const SecondCard = () => {
                     выпитых
                     кофе                   
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

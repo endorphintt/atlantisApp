@@ -1,14 +1,19 @@
 import React from "react";
 import './Hi.scss'
+import { motion } from 'framer-motion'
+import { textAnimation } from "../../../animations/animations";
 
 const Hi = () => {
     return(
-        <div className="hi">
+        <motion.div
+        initial='hidden'
+        whileInView='visible'
+        className="hi">
             <div className="hi_container">
-                <h1 className="hi__title">Легализация иностранцов в Польше</h1>
-                <h2 className="hi__subtitle">Подходим индивидуально к каждому клиенту</h2>
+                <motion.h1 variants={textAnimation} className="hi__title">Легализация иностранцов в Польше</motion.h1>
+                <motion.h2 variants={textAnimation}  className="hi__subtitle">Подходим индивидуально к каждому клиенту</motion.h2>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

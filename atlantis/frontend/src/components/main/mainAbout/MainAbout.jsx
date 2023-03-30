@@ -1,20 +1,30 @@
 import React from "react";
 import './MainAbout.scss';
-import BlueButton from "../../blueButton/BlueButton";
+import BlueButton from "../../blueButton/BlueButtonContainer";
+import { motion } from 'framer-motion'
+import { textAnimation, textAnimation2 } from "../../../animations/animations";
 
 const MainAbout = () => {
 
     const link = {
         adress: 'about',
-        id: '02'
+        id: '03'
     }
 
     return (
         <div className="mainAbout">
-            <div className="mainAbout__title">
+            <motion.div
+             initial='hidden'
+             whileInView='visible'
+             variants={textAnimation}
+             className="mainAbout__title">
                 Немного о нашей компании
-            </div>
-            <div className="mainAbout__content">
+            </motion.div>
+            <motion.div
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation2}
+            className="mainAbout__content">
                 <div className="mainAbout__text">
                     Atlantis - современная юридическая фирма, специализирующаяся на помощи людям с юридическими проблемами.
                      Мы являемся ответом на растущий спрос на профессиональные юридические 
@@ -32,10 +42,14 @@ const MainAbout = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="mainAbout__button">
+            </motion.div>
+            <motion.div
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation2}
+            className="mainAbout__button">
                 <BlueButton name={'больше о нас'} link={link}/> 
-            </div>           
+            </motion.div>           
         </div>
     )
 }

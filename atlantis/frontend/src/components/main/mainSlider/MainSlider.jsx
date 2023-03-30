@@ -2,13 +2,15 @@ import React from "react";
 import './MainSlider.scss'
 import { useState } from "react";
 import { useRef } from "react";
-import BlueButton from "../../blueButton/BlueButton"; 
+import BlueButtonContainer from "../../blueButton/BlueButtonContainer";
+import { motion } from 'framer-motion'
+import { textAnimation, textAnimation2 } from "../../../animations/animations";
 
 const MainSlider = () => {
 
     const toBlogLink = {
         adress: 'blog',
-        id: '03'
+        id: '04'
     }
 
     const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -35,10 +37,18 @@ const MainSlider = () => {
 
     return (
         <div className="mainSlider_container">
-            <div className="mainSlider__title">
+            <motion.div
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation}
+            className="mainSlider__title">
                 Клиенты о нас
-            </div>
-            <div className="mainSlider">
+            </motion.div>
+            <motion.div
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation2}
+            className="mainSlider">
                 <div className="mainSlider__track" ref={slider}>
                     {items.map((item) => {
                         return (
@@ -50,10 +60,14 @@ const MainSlider = () => {
                 </div>
                 <button onClick={prevHandler} className='slider__button button-prev'></button>
                 <button onClick={nextHandler} className='slider__button button-next'></button>
-            </div>
-            <div className="mainSlider__button">
-                <BlueButton name={'наш блог'} link={toBlogLink} />
-            </div>
+            </motion.div>
+            <motion.div
+            initial='hidden'
+            whileInView='visible'
+            variants={textAnimation2}
+            className="mainSlider__button">
+                <BlueButtonContainer name={'наш блог'} link={toBlogLink} />
+            </motion.div>
         </div>
     )
 }
