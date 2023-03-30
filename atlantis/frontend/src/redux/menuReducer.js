@@ -1,15 +1,16 @@
 const UPDATE_MENU = 'UPDATE_MENU'
 
 const initialState = {
-    ActiveMenuItem: '01'
+    activeMenuItem: '01'
 }
 
 const menuReducer = (state = initialState, action) => {
+   
     let newState;
     switch(action.type) {
         case UPDATE_MENU:
             newState = {...state}
-                newState.menuIsOpened = action.menuIsOpened
+                newState.activeMenuItem = action.activeMenuItem
             return newState
         default:
             return state
@@ -19,7 +20,7 @@ const menuReducer = (state = initialState, action) => {
 export const UpdateMenuActionCreator = (id) => {
     return ({
         type: UPDATE_MENU,
-        ActiveMenuItem: id,
+        activeMenuItem: id,
     })
 }
 

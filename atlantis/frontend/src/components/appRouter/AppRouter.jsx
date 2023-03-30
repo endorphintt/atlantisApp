@@ -11,8 +11,8 @@ const AppRouter = (props) => {
         <div className="appRouter">
             <Routes>
                 {user.isAuth === true && authRoutes.map(({path, Component}) => 
-                <Route key={path} path={path} element={<Component onMenuLinkClick={props.onMenuLinkClick}/>}/>)}
-                {publicRoutes.map(({path, Component}) => <Route key={path} path={path} element={<Component onMenuLinkClick={props.onMenuLinkClick} />}/>)}
+                <Route key={path} path={path} element={<Component />}/>)}
+                {publicRoutes.map(({path, Component}) => <Route key={path} path={path} element={<Component />}/>)}
                 <Route path='*' element={<Navigate to={'/main'}/>} />
             </Routes> 
         </div>

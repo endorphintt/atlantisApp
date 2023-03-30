@@ -4,11 +4,9 @@ import { useNavigate } from "react-router-dom"
 import './BlueButton.scss'
 import { MyContext } from "../../App"
 
-const BlueButton = (props) => {
-    const onMenuLinkClick = useContext(MyContext) 
-
+const BlueButton = (props) => { 
     return(
-        <button className="blue-button" onClick={() => onMenuLinkClick(props.link)}>{props.name}</button>
+        <button className="blue-button">{props.name}</button>
     )
 }
 
