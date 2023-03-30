@@ -1,12 +1,14 @@
 import React from "react"
+import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import './BlueButton.scss'
+import { MyContext } from "../../App"
 
 const BlueButton = (props) => {
-    const nav = useNavigate();
+    const onMenuLinkClick = useContext(MyContext) 
 
     return(
-        <button className="blue-button" onClick={() => nav(props.link)}>{props.name}</button>
+        <button className="blue-button" onClick={() => onMenuLinkClick(props.link)}>{props.name}</button>
     )
 }
 

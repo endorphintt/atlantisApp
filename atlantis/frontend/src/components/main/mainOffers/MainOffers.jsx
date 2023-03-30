@@ -1,8 +1,17 @@
 import React, { useState } from "react"
 import './MainOffers.scss'
-import { useNavigate } from "react-router-dom"
+import { MyContext } from "../../../App"
+import { useContext } from "react"
+
 
 const MainOffers = () => {
+
+    const ToOffersClick = useContext(MyContext)
+
+    const link = {
+        adress: 'offers',
+        id: '04'
+    }
 
     const cards = [
         {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 1},
@@ -15,8 +24,6 @@ const MainOffers = () => {
         {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 8},
     ]
 
-    const nav = useNavigate();
-
     const [active, setActive] = useState(false)
 
     return(
@@ -24,7 +31,7 @@ const MainOffers = () => {
             <h2 className="MainOffers__title">наши услуги</h2>
             <div className={active ? `MainOffers__items active` : 'MainOffers__items'}>
                 {cards.map(card => 
-                <div onClick={() => nav('/offers')} key={card.id} className="MainOffers__item_container">
+                <div onClick={() => ToOffersClick(link)} key={card.id} className="MainOffers__item_container">
                     <div className="MainOffers__item">
                         <h3 className="MainOffers__subtitle">{card.subtitle}</h3>
                         <div className="MainOffers__deskription">

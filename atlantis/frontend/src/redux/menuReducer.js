@@ -1,7 +1,7 @@
 const UPDATE_MENU = 'UPDATE_MENU'
 
 const initialState = {
-    menuIsOpened: false
+    ActiveMenuItem: '01'
 }
 
 const menuReducer = (state = initialState, action) => {
@@ -16,10 +16,10 @@ const menuReducer = (state = initialState, action) => {
     }
 }
 
-export const UpdateMenuActionCreator = (bool) => {
+export const UpdateMenuActionCreator = (id) => {
     return ({
         type: UPDATE_MENU,
-        menuIsOpened: bool,
+        ActiveMenuItem: id,
     })
 }
 

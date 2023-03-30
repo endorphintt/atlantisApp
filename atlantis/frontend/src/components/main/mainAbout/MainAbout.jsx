@@ -1,11 +1,13 @@
 import React from "react";
 import './MainAbout.scss';
-import { useNavigate } from "react-router-dom";
 import BlueButton from "../../blueButton/BlueButton";
 
 const MainAbout = () => {
 
-    const nav = useNavigate()
+    const link = {
+        adress: 'about',
+        id: '02'
+    }
 
     return (
         <div className="mainAbout">
@@ -32,7 +34,7 @@ const MainAbout = () => {
                 </div>
             </div>
             <div className="mainAbout__button">
-                <BlueButton name={'больше о нас'} link={'/about'}/> 
+                <BlueButton name={'больше о нас'} link={link}/> 
             </div>           
         </div>
     )

@@ -1,6 +1,7 @@
 import React from "react";
 import './Footer.scss'
 import { useState } from "react";
+import FooterBottom from "./footerBottom/FooterBottom";
 
 const Footer = () => {
 
@@ -44,7 +45,7 @@ const Footer = () => {
 
     const onSubmitClick = (e) => {
         e.preventDefault()
-        if(!name.error && !email.error && !number.error && !deskription.error){
+        if(!name.error && !email.error && !number.error && !deskription.error && name.name.length != 0 && email.email.length != 0 && number.number.length != 0){
             console.log({
                 name: name.name,
                 email: email.email,
@@ -118,6 +119,7 @@ const Footer = () => {
                     </form>
                 </div>                    
             </div>
+            <FooterBottom />
         </div>
     )
 }

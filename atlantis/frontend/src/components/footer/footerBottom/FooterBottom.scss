@@ -1,0 +1,147 @@
+.footer-bottom{
+    min-height: 500px;
+    background-color: rgb(34, 30, 30);
+    color: rgb(114, 111, 108);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__data{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__company{
+        & img {
+            width: 100px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+        & div{
+            & p{
+                padding-left: 10px;
+                margin: 5px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: rgb(114, 111, 108);
+                    top: 8px;
+                    left: 0;
+                    border-radius: 50%;
+                    
+                }
+                &:hover{
+                    color: rgba(179, 149, 62, 1);
+                    &::after{    
+                        color: rgba(179, 149, 62, 1);
+                    }
+                }
+                transition: 1s;
+            }
+        }
+    }
+    &__rectangles{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        justify-content: space-around;
+    }
+    &__rectangle{
+        width: 45%;
+        padding: 5px;
+        border: 1px dotted rgb(114, 111, 108);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 0 10px 0;
+        & h3{
+            padding-bottom: 10px;
+            position: relative;
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            &::after{
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 50px;
+                background-color: rgba(179, 149, 62, 1);
+                left: calc(50% - 25px);
+                bottom: 0;
+            }
+        }
+        & div{
+            & p{
+                padding-left: 10px;
+                margin: 5px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: rgb(114, 111, 108);
+                    top: 8px;
+                    left: 0;
+                    border-radius: 50%;
+                }
+            }
+        }
+        &:hover{
+            background-color: rgba(179, 149, 62, 1);
+            box-shadow: 0px 0px 15px rgba(179, 149, 62, 1);
+            color: white;
+        }
+        transition: 1s;
+    }
+    &__link{
+        margin: 5px;
+        color: rgb(114, 111, 108);
+        text-decoration: none;
+        transition: 1s;
+        &:hover{
+            color: rgba(179, 149, 62, 1);
+        }
+    }
+}
+
+@media(min-width: 900px){
+    .footer-bottom{
+        padding-left: 150px;
+    }
+}
+
+@media(max-width: 676px){
+    .footer-bottom{
+        &__data{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__company{
+            margin-top: 30px;
+            & img{
+                display: block;
+                margin: 10px 30px 10px 10px;
+            }
+            display: flex;
+        }
+        &__rectangles{
+            width: 95%;
+        }
+        &__social{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .footer-bottom{
+        &__rectangle{
+            width: 95%;
+        }
+    }
+}

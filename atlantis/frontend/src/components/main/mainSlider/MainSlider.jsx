@@ -6,6 +6,11 @@ import BlueButton from "../../blueButton/BlueButton";
 
 const MainSlider = () => {
 
+    const toBlogLink = {
+        adress: 'blog',
+        id: '03'
+    }
+
     const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     const slider = useRef()
 
@@ -47,7 +52,7 @@ const MainSlider = () => {
                 <button onClick={nextHandler} className='slider__button button-next'></button>
             </div>
             <div className="mainSlider__button">
-                <BlueButton name={'наш блог'} link={'/blog'} />
+                <BlueButton name={'наш блог'} link={toBlogLink} />
             </div>
         </div>
     )
