@@ -5,7 +5,7 @@ import About from '../about/About';
 import Main from '../main/Main';
 import RealEstate from '../realEstate/RealEstate';
 import WebOffers from '../webOffers/WebOffers';
-import Offers from '../offers/Offers';
+import OffersContainer from '../offers/OffersContainer.jsx';
 import Blog from '../blog/Blog';
 import Login from '../login/Login'
 import Auth from '../auth/Auth'
@@ -33,7 +33,7 @@ export const publicRoutes = [
     },
     {
         path: OFFERS_ROUTE,
-        Component: Offers,
+        Component: OffersContainer,
     },
     {
         path: BLOG_ROUTE,

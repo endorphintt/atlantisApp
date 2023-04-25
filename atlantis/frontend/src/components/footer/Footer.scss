@@ -1,11 +1,5 @@
 input::-ms-clear{display: none;}
 
-@media(min-width: 900px){
-    .footer__content{
-        padding-left: 150px;
-    }
-}
-
 .error{
     box-shadow: 0 0 10px 3px red;
 }
@@ -187,5 +181,17 @@ input::-ms-clear{display: none;}
     .footer__content{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media(min-width: 900px){
+    .footer__content{
+        padding-left: 150px;
+    }
+    .footer__title{
+        padding-left: 150px;
+        &::after{
+            left: calc(50%); 
+        }
     }
 }

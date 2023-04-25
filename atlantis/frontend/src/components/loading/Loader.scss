@@ -29,7 +29,8 @@
   align-items: center;
   justify-content: center;
   &__content{
-    width: 50%;
+    width: 40%;
+    max-height: 90%;
     & img{
       width: 100%;
       animation: animation ease 3s 1, pulsation ease 1s 3 ;

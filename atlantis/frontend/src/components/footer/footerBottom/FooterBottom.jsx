@@ -11,37 +11,35 @@ const FooterBottom = () => {
                         <p>sp. Atlantis...</p>
                         <p>UL. SUCHA 2 </p>
                         <p>00-844 Wroclaw</p>
-                        <p>NIP: 5272977935</p>
-                        <p>KRS: 0000933300 </p>
+                        <p>NIP: 8982274268</p>
+                        <p>KRS: 0000955898 </p>
                     </div>
                 </div>
                 <div className="footer-bottom__rectangles">                    
                     <div className="footer-bottom__rectangle">
-                        <h3>Офис во Вроцлаве</h3>
+                        <h3>Вроцлав</h3>
                         <div>
-                            <p>tel: 5435344343434 </p>
-                            <p>adress: lorem ipsum dolor</p> 
+                            <p>tel:  +48732851456</p>
+                            <p>adress: UL. SUCHA 2</p> 
                         </div>
                     </div>
                     <div className="footer-bottom__rectangle">
-                        <h3>Офис в Варшаве</h3>
+                        <h3>Краків</h3>
                         <div>
-                            <p>tel: 5435344343434 </p>
-                            <p>adress: lorem ipsum dolor</p> 
+                            <p>tel: +48730638088 </p>
+                            <p>adress: Mogilska 43</p> 
                         </div>
                     </div>
                     <div className="footer-bottom__rectangle">
-                        <h3>Отдел Правный</h3>
+                        <h3>Правний відділ</h3>
                         <div>
-                            <p>tel: 5435344343434 </p>
-                            <p>adress: lorem ipsum dolor</p> 
+                            <p>tel: +48730638088 </p>
                         </div>
                     </div>
                     <div className="footer-bottom__rectangle">
-                        <h3>Вспулпраца</h3>
+                        <h3>Співпраця</h3>
                         <div>
                             <p>tel: 5435344343434 </p>
-                            <p>adress: lorem ipsum dolor</p> 
                         </div>
                     </div>
                 </div>

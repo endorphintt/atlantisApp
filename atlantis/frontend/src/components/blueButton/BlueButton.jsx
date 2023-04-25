@@ -7,8 +7,10 @@ const BlueButton = (props) => {
     const nav = useNavigate();
 
     const OnMenuLinkClick = (link) => {
-        props.updateMenu(link)
-        nav('/' + link.adress)
+        if('updateMenu' in props){
+            props.updateMenu(link)
+            nav('/' + link.adress)
+        }
     }
     return(
         <button className="blue-button" onClick={() => OnMenuLinkClick(props.link)} >{props.name}</button>

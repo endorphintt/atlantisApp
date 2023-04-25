@@ -42,7 +42,7 @@ const MainSlider = () => {
             whileInView='visible'
             variants={textAnimation}
             className="mainSlider__title">
-                Клиенты о нас
+                Клієнти про нас
             </motion.div>
             <motion.div
             initial='hidden'
@@ -53,7 +53,7 @@ const MainSlider = () => {
                     {items.map((item) => {
                         return (
                             <div key={item} className="mainSlider__item">
-                                <img src="./img/review1.jpeg" alt="" />
+                                <img src="img/review1.jpeg" alt="" />
                             </div>
                         )
                     })}

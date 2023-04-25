@@ -4,11 +4,11 @@ import './MenuBorder.scss'
 
 const MenuBorder = (props) => {
     const links = [
-        {adress: 'main', name: 'ГЛАВНАЯ', id: '01'},
-        {adress: 'offers', name: 'НАШИ УСЛУГИ', id: '02'},
-        {adress: 'about', name: 'О НАС', id: '03'},
+        {adress: 'main', name: 'ГОЛОВНА', id: '01'},
+        {adress: 'offers', name: 'НАШІ ПОСЛУГИ', id: '02'},
+        {adress: 'about', name: 'ПРО НАС', id: '03'},
         {adress: 'blog', name: 'БЛОГ', id: '04'},
-        {adress: 'login', name: 'ЛОГИН', id: '05'},
+        {adress: 'login', name: 'ЛОГІН', id: '05'},
     ]
 
     const updateMenu = (link) => {

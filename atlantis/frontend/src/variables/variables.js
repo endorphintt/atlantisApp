@@ -1,0 +1,5 @@
+export const LIFE_IN_POLAND = 'lifeInPoLand'
+export const OUR_LIFE = 'ourLife'
+export const LEGALIZATION = 'legalization'
+export const ALL = 'all'
+export const FROM_US = 'fromUs'

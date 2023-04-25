@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { textAnimation, textAnimation2 } from "../../../animations/animations";
 
 const Card = (props) => {
+    
     return(
         <div className="card_container">
             <div className="card">
@@ -19,6 +20,7 @@ const Card = (props) => {
                 initial='hidden'
                 whileInView='visible'
                 variants={textAnimation2}
+                onClick={props.handleScrollClick}
                 className="card__button">
                     <BlueButton name={'контакт'} link={'/contact'} />
                 </motion.div>                 

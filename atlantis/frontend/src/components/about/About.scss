@@ -1,0 +1,105 @@
+.about{
+    & .mainAbout{
+        
+        &__button{
+            display: none;
+        }
+        &__title{
+            display: none;
+        }
+        padding-bottom: 100px;
+    }
+    &__content{
+        padding: 30px;
+    }
+    &__img{
+        height: auto;
+        max-width: 300px;
+        
+    }
+    &__first-row{
+        justify-content: space-around;
+        align-items: center;
+        & p{
+            position: relative;
+            width: 40%;
+            text-shadow: 2px 2px 4px #999999;
+            padding: 20px;
+            font-family: 'Vollkorn', serif;
+            font-size: 16px;
+            background: linear-gradient(to right, #000 0, #000 10%, transparent 10%, transparent 90%), linear-gradient(to right, transparent 0, transparent 90%, #000 80%, #000 100%), linear-gradient(to bottom, #000 0, #000 100%);
+            background-size: 100% 3px, 100% 3px, 3px 10%;
+            position: relative;
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: no-repeat;
+            color: #4d4c4c;
+            &:after{
+                content: '';
+                position: absolute;
+                height: 10%;
+                width: 3px;
+                right: 0;
+                bottom: 0;
+                background-color: #000;
+            }
+        }
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__second-row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & p{
+            position: relative;
+            width: 40%;
+            text-shadow: 2px 2px 4px #999999;
+            padding: 20px;
+            font-family: 'Vollkorn', serif;
+            font-size: 16px;
+            background: linear-gradient(to right, #000 0, #000 10%, transparent 10%, transparent 90%), linear-gradient(to right, transparent 0, transparent 90%, #000 80%, #000 100%), linear-gradient(to bottom, #000 0, #000 100%);
+            background-size: 100% 3px, 100% 3px, 3px 10%;
+            position: relative;
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: no-repeat;
+            color: #4d4c4c;
+            margin-bottom: 0;
+            &:after{
+                content: '';
+                position: absolute;
+                height: 10%;
+                width: 3px;
+                right: 0;
+                bottom: 0;
+                background-color: #000;
+            }
+        }
+    }
+}
+
+@media(max-width: 750px){
+    .about__first-row, .about__second-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & p{
+            width: 90%;
+            margin-bottom: 30px;
+        }     
+    }
+    .about__first-row{
+        flex-direction: column-reverse;
+    }
+    .about__img{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 900px){
+    .about__content{
+        padding-left: 150px;
+    }
+}
+

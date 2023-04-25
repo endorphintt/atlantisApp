@@ -10,8 +10,8 @@ const Hi = () => {
         whileInView='visible'
         className="hi">
             <div className="hi_container">
-                <motion.h1 variants={textAnimation} className="hi__title">Легализация иностранцов в Польше</motion.h1>
-                <motion.h2 variants={textAnimation}  className="hi__subtitle">Подходим индивидуально к каждому клиенту</motion.h2>
+                <motion.h1 variants={textAnimation} className="hi__title">Легалізація іноземців в Польщі</motion.h1>
+                <motion.h2 variants={textAnimation}  className="hi__subtitle">Гарантуємо 100% результат</motion.h2>
             </div>
         </motion.div>
     )

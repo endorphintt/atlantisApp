@@ -2,7 +2,8 @@ import React from "react";
 import './Footer.scss'
 import { useState } from "react";
 import FooterBottom from "./footerBottom/FooterBottom";
-
+import { motion } from 'framer-motion'
+import { textAnimation, textAnimation2 } from "../../animations/animations";
 
 const Footer = () => {
 
@@ -62,70 +63,71 @@ const Footer = () => {
     }
 
     return(
-        <div className="footer">
-            <div
-            
-            className="footer__title">Контакт</div>
-            <div
-            
-            className="footer__content">
+        <motion.div
+        initial='hidden'
+        whileInView='visible'
+        className="footer">
+            <motion.div
+            variants={textAnimation2}
+            className="footer__title">Контакт</motion.div>
+            <div className="footer__content">
                 <div className="footer__info">
-                    <div className="footer__number">
+                    <motion.div variants={textAnimation2} className="footer__number">
                         <div className="footer__number_img"></div>
                         <div>
-                            Наши номера: <br />
+                            Наші номери: <br />
                             +48730638088 <br />
                             +48732851456
                         </div>
-                    </div>
-                    <div className="footer__adress">
+                    </motion.div>
+                    <motion.div variants={textAnimation2} className="footer__adress">
                         <div className="footer__adress_img"></div>
                         <div>
                             Wrocław, ul. Sucha 2
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="footer__form_container">        
                     <form action="" className="footer__form">
-                            <div className="form__title">
-                                Отправь нам сообщение и наш специалист тебе перезвонит
-                            </div>
+                            <motion.div variants={textAnimation} className="form__title">
+                                Залиш свої дані і наші спеціалісти зв'яжуться з тобою.
+                            </motion.div>
                         <div className="form__items">
-                            <div className='form__item'>
+                            <motion.div variants={textAnimation} className='form__item'>
                                 <input type="text" 
                                 placeholder="name" 
                                 value={name.name} 
                                 className={name.error ? `form__input error` : "form__input"} 
                                 onChange={onNameChange} />
-                            </div>
-                            <div className="form__item">
+                            </motion.div>
+                            <motion.div variants={textAnimation} className="form__item">
                                 <input type="text" 
                                 placeholder="email" 
                                 value={email.email} 
                                 className={email.error ? `form__input error` : "form__input"} 
                                 onChange={onEmailChange} />
-                            </div>
-                            <div className="form__item">
+                            </motion.div>
+                            <motion.div variants={textAnimation} className="form__item">
                                 <input type="text" 
                                 placeholder="number (+...)" 
                                 value={number.number} 
                                 className={number.error ? `form__input error` : "form__input"}  
                                 onChange={onNumberChange} />
-                            </div>
-                            <div className="form__item">
+                            </motion.div>
+                            <motion.div variants={textAnimation} className="form__item">
                                 <input type="text" 
                                 placeholder="deskription" 
                                 value={deskription.deskription} 
                                 className={deskription.error ? `form__input error textarea` : `form__input textarea`}  
                                 onChange={onDeskriptionChange} />
-                            </div>
+                            </motion.div>
                         </div>
                         <button className="form__button" onClick={onSubmitClick} type="submit">Выслать</button>
                     </form>
                 </div>                    
             </div>
             <FooterBottom />
-        </div>
+        </motion.div>
     )
 }
 

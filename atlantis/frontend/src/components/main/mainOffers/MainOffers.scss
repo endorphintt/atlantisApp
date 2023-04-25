@@ -50,6 +50,7 @@
         background-color: white;
     }
     &__item{
+        height: calc(100% - 25px);
         color: antiquewhite;
         padding: 8px;
         padding-bottom: 16px;

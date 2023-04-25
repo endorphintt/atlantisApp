@@ -6,7 +6,7 @@ const Loader = () => {
   return (
     <div className="mask">
       <div className="mask__content">
-        <img src="img/circleLogo.png" alt="img" />
+        <img src="img/circleLogo.PNG" alt="img" />
       </div>
 		</div>
   );

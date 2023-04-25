@@ -11,14 +11,16 @@ const MainOffers = () => {
     const store = useContext(MyContext)
 
     const cards = [
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 1},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 2},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 3},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 4},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 5},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 6},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 7},
-        {subtitle: 'карта побыта', deskription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', id: 8},
+        {subtitle: 'Тимчасовий побут', deskription: 'Повний супровід до отримання пластику', id: 1},
+        {subtitle: 'Тимчасовий побут UKR', deskription: 'Повний супровід до отримання пластику', id: 2},
+        {subtitle: 'Сталий побут', deskription: 'Повний супровід до отримання пластику', id: 3},
+        {subtitle: 'Карта резидента', deskription: 'Повний супровід до отримання пластику', id: 4},
+        {subtitle: 'Аналіз справи', deskription: 'Супровід до отримання децизії', id: 5},
+        {subtitle: 'Громадянство', deskription: 'Супровід до отримання децизії;', id: 6},
+        {subtitle: 'Для власників авто', deskription: 'Заміна водійського посвідчення Реєстрація авто', id: 7},
+        {subtitle: 'Бізнес', deskription: 'Відкриття ТОВ, Відкриття ФОП', id: 8},
+        {subtitle: 'Для власників авто', deskription: 'Заміна водійського посвідчення Реєстрація авто', id: 9},
+        {subtitle: 'Шлюб', deskription: 'Присяжний переклад, Подача заяви до суду, Розлучення;', id: 10},
     ]
 
     const [active, setActive] = useState(false)
@@ -29,7 +31,7 @@ const MainOffers = () => {
             initial='hidden'
             whileInView='visible'
             variants={textAnimation}
-            className="MainOffers__title">наши услуги</motion.h2>
+            className="MainOffers__title">наші послуги</motion.h2>
             <div className={active ? `MainOffers__items active` : 'MainOffers__items'}>
                 {cards.map(card => 
                 <motion.div
@@ -46,7 +48,7 @@ const MainOffers = () => {
                     )}               
             </div>
             <div className={active ? `MainOffers__more active` : 'MainOffers__more'} onClick={() => setActive(!active)}>
-                больше
+                більше
             </div>
         </div>
     )
