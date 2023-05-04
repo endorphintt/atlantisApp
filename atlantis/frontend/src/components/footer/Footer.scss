@@ -84,9 +84,15 @@ input::-ms-clear{display: none;}
         &_img{
             width: 50px;
             height: 50px;
-            border: 2px solid rgba(28, 71, 117, 0.8);
+            border: 2px solid rgba(27, 103, 184, 0.8);
             border-radius: 50%;
             margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;         
+            & img{
+                width: 30px;
+            }
         }
     }
     &__adress{
@@ -98,8 +104,14 @@ input::-ms-clear{display: none;}
             margin-right: 20px;
             width: 50px;
             height: 50px;
-            border: 2px solid rgba(28, 71, 117, 0.8);
+            border: 2px solid rgba(27, 103, 184, 0.8);
             border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img{
+                width: 30px;
+            }
         }
         margin-bottom: 50px;
     }
@@ -126,13 +138,13 @@ input::-ms-clear{display: none;}
     &__input{
         display: block;
         height: 40px;
-        width: 100%;
+        width: calc(100% - 10px);
         padding: 0;
         border-radius: 20px;
         border: none;
         margin-top: 20px;
         outline: none;
-        padding-left: 5px;
+        padding-left: 15px;
         &.textarea{
             height: 80px;
         }

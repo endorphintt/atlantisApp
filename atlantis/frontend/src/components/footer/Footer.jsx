@@ -73,15 +73,17 @@ const Footer = () => {
             <div className="footer__content">
                 <div className="footer__info">
                     <motion.div variants={textAnimation2} className="footer__number">
-                        <div className="footer__number_img"></div>
+                        <div className="footer__number_img"><img src="img/icons2.png" alt="" /></div>
                         <div>
                             Наші номери: <br />
+                            Вроцлав: +48732851456 <br />
                             +48730638088 <br />
-                            +48732851456
+                            Краків:  +48730638088 <br />
+                            Інші міста: +48730638088 
                         </div>
                     </motion.div>
                     <motion.div variants={textAnimation2} className="footer__adress">
-                        <div className="footer__adress_img"></div>
+                        <div className="footer__adress_img"><img src="img/icons1.png" alt="" /></div>
                         <div>
                             Wrocław, ul. Sucha 2
                         </div>

@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import Call from './components/call/Call';
 import MenuBorderContainer from './components/menuBorder/menuBorderContainer';
 import Loader from './components/loading/Loader';
+import Rights from './components/rights/Rights';
 import { useEffect } from 'react';
 
 export const MyContext = React.createContext();
@@ -30,18 +31,21 @@ const App = () => {
         <Loader />
         :
         <div className="app">
-          <Header menu={menu} updateMenu={updateMenu}/>
-          <div className="app__content">
-            <div className="menu">
-              <MenuBorderContainer/>
-              <MenuBurger menu={menu} updateMenu={updateMenu}/> 
+          <Rights />
+          <div>
+            <Header menu={menu} updateMenu={updateMenu}/>
+            <div className="app__content">
+              <div className="menu">
+                <MenuBorderContainer/>
+                <MenuBurger menu={menu} updateMenu={updateMenu}/> 
+              </div>
+              <div className="content">
+                <AppRouter/>
+              </div>
             </div>
-            <div className="content">
-              <AppRouter/>
-            </div>
-          </div>
-          <Call />
-        </div>
+            <Call />
+          </div> 
+        </div>     
         }       
       </div>
   );

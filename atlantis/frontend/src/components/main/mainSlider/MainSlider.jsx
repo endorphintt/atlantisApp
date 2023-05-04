@@ -13,6 +13,8 @@ const MainSlider = () => {
         id: '04'
     }
 
+    const images = ['review1.jpeg', 'review2.jpeg', 'review3.jpeg', 'review4.jpeg', 'review5.jpeg', 'review6.jpeg']
+
     const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     const slider = useRef()
 
@@ -50,10 +52,10 @@ const MainSlider = () => {
             variants={textAnimation2}
             className="mainSlider">
                 <div className="mainSlider__track" ref={slider}>
-                    {items.map((item) => {
+                    {images.map((item) => {
                         return (
                             <div key={item} className="mainSlider__item">
-                                <img src="img/review1.jpeg" alt="" />
+                                <img src={`img/${item}`} alt="img" />
                             </div>
                         )
                     })}

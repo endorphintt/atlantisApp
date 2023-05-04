@@ -23,15 +23,15 @@
     }
     .menu__links{
         & a{
-            text-shadow: 2px 2px 4px rgb(238, 238, 238);
+            text-shadow: 2px 2px 4px rgb(23, 18, 18);
             display: block;
             padding: 10px;
-            font-size: 24px;
-            color: rgb(67, 77, 176);
+            font-size: 28px;
+            color: white;
             text-decoration: none;
             display: flex;
             justify-content: center;
+            
         }
-
     }
 }

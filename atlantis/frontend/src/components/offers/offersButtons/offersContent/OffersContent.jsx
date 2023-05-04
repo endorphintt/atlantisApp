@@ -23,36 +23,40 @@ const OffersContent = (props) => {
                 </motion.div>
                 {props.offersActiveItem.offers?
                     <div className="proposals">
-                        <div className="proposals__title">
+                        {/* <div className="proposals__title">
                             послуги
-                        </div>
+                        </div> */}
                         <div className="proposals__items">
-                            {props.offersActiveItem.offers.map(item => <p>{item.title}</p> )}
+                            {props.offersActiveItem.offers.map(item => <p><span>{item.title}:</span> <span>{item.deskription}</span></p> )}
                         </div>
                     </div>
                     :
-                    <div>error</div>
+                    <div></div>
                 }
                 <div className="oItem__questions">
-                    <motion.div  variants={textAnimation2} className="oItem__question first">
-                        <div className="oItem__questionPart">
-                            {props.offersActiveItem.questionFirst}
+                    {props.offersActiveItem.questionFirst?
+                        <div className="oItem__question first">
+                            <div className="oItem__questionPart">
+                                {props.offersActiveItem.questionFirst}
+                            </div>
+                            <div className="oItem__answerPart">
+                                {props.offersActiveItem.answerFirst}
+                            </div>
                         </div>
-                        <div className="oItem__answerPart">
-                            {props.offersActiveItem.answerFirst}
-                        </div>
-                    </motion.div>
+                        :
+                        <div></div>
+                    }
                     {props.offersActiveItem.questionSecond? 
-                    <motion.div  variants={textAnimation2} className="oItem__question second">
-                        <div className="oItem__questionPart">
-                            {props.offersActiveItem.questionSecond}
-                        </div>
-                        <div className="oItem__answerPart">
-                            {props.offersActiveItem.answerSecond}
-                        </div>
-                    </motion.div>
-                    :
-                    <div></div>                      
+                        <motion.div  variants={textAnimation2} className="oItem__question second">
+                            <div className="oItem__questionPart">
+                                {props.offersActiveItem.questionSecond}
+                            </div>
+                            <div className="oItem__answerPart">
+                                {props.offersActiveItem.answerSecond}
+                            </div>
+                        </motion.div>
+                        :
+                        <div></div>                      
                     }
                 </div>
             </div>

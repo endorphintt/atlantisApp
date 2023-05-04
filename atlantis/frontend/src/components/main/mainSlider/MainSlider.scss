@@ -14,13 +14,11 @@
         min-width: 260px;
         height: 450px;
         background-color: aqua;
-        &:ntn-child(2n){
-            background-color: pink;
-        }
         border-radius: 10px;
         overflow: hidden;
         transition: 1s ;
         & img{
+            object-fit: cover;
             width: 100%;
         }
         &:ntn-child(2n){
