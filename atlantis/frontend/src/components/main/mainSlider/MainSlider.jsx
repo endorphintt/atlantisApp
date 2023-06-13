@@ -13,9 +13,9 @@ const MainSlider = () => {
         id: '04'
     }
 
-    const images = ['review1.jpeg', 'review2.jpeg', 'review3.jpeg', 'review4.jpeg', 'review5.jpeg', 'review6.jpeg']
+    const images = ['review2.PNG', 'review3.PNG', 'review4.PNG', 'review5.PNG', 'review6.PNG', 'review1.jpeg']
 
-    const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    const [items, setItems] = useState([1, 2])
     const slider = useRef()
 
     const prevHandler = () => {
@@ -29,7 +29,7 @@ const MainSlider = () => {
     let position = 0
 
     const nextHandler = () => {
-        if(position >= -(items.length) * 260 + 780){
+        if(position >= -(items.length) * 260 - 260){
             position -= 260
             slider.current.childNodes.forEach(el => {
                 el.style = `transform: translateX(${position}px)`
@@ -75,3 +75,4 @@ const MainSlider = () => {
 }
 
 export default MainSlider;
+
