@@ -146,6 +146,7 @@ input::-ms-clear{display: none;}
         outline: none;
         padding-left: 15px;
         &.textarea{
+            padding-top: 10px;
             height: 80px;
         }
     }

@@ -17,9 +17,9 @@
         align-items: center;
         justify-content: center;
         z-index: 230;
-    }
-    &.active{
-        transform: translateX(0%);
+        &.active{
+            transform: translateX(0%);
+        }
     }
     .menu__links{
         & a{

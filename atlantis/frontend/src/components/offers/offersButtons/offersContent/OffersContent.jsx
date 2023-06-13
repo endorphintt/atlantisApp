@@ -47,16 +47,16 @@ const OffersContent = (props) => {
                         <div></div>
                     }
                     {props.offersActiveItem.questionSecond? 
-                        <motion.div  variants={textAnimation2} className="oItem__question second">
+                        <div className="oItem__question second">
                             <div className="oItem__questionPart">
                                 {props.offersActiveItem.questionSecond}
                             </div>
                             <div className="oItem__answerPart">
                                 {props.offersActiveItem.answerSecond}
                             </div>
-                        </motion.div>
+                        </div>
                         :
-                        <div></div>                      
+                        <p></p>                      
                     }
                 </div>
             </div>

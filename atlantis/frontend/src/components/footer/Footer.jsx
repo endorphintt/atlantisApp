@@ -50,7 +50,8 @@ const Footer = () => {
                                     type="name"
                                     id="name"
                                     name="name"
-                                    className="form__input" 
+                                    className="form__input"
+                                    placeholder="name" 
                                 />
                                 <ValidationError 
                                     prefix="Name" 
@@ -64,6 +65,7 @@ const Footer = () => {
                                     id="email"
                                     type="email" 
                                     name="email"
+                                    placeholder="email"
                                 />
                                 <ValidationError 
                                     prefix="Email" 
@@ -77,6 +79,7 @@ const Footer = () => {
                                     id="phone"
                                     type="phone number" 
                                     name="phone"
+                                    placeholder="phone number (+...)"
                                 />
                                 <ValidationError 
                                     prefix="Phone" 
@@ -89,6 +92,7 @@ const Footer = () => {
                                     id="message"
                                     name="message"
                                     className="form__input textarea" 
+                                    placeholder="text"
                                 />
                                 <ValidationError 
                                     prefix="Message" 

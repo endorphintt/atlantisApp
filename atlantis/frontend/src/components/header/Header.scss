@@ -44,23 +44,38 @@
         transition: all 0.5s ease-in-out;
     }
 
-    @keyframes rotate{
-        0%{
-            &::after{
-                content: '';
-                bottom: 0;
-                width: 40%;
-            }
-            &::before{
-                top: 0;
-                content: '';
-            }
-            & span{
-                top: 8px;
-                width: 70%;
-            }
-        }
-    }
+    // @keyframes rotate{
+    //     0% {
+    //         &::after{
+    //             content: '';
+    //             bottom: 0;
+    //             width: 40%;
+    //         }
+    //         &::before{
+    //             top: 0;
+    //             content: '';
+    //         }
+    //         & span{
+    //             top: 8px;
+    //             width: 70%;
+    //         }
+    //     }
+    //     100% {
+    //         &::after{
+    //             content: '';
+    //             bottom: 0;
+    //             width: 40%;
+    //         }
+    //         &::before{
+    //             top: 0;
+    //             content: '';
+    //         }
+    //         & span{
+    //             top: 8px;
+    //             width: 70%;
+    //         }
+    //     }
+    // }
 
     .active{
         &::after{
