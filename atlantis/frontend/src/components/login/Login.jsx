@@ -75,12 +75,12 @@ const Login = () => {
             <div className={classes.attention_container}>
                 <div className={classes.attention}>
                     <div className={classes.form__title}>
-                        Внимание!
+                        Увага!
                     </div>
                     <div className={classes.attention__deskription}>
-                        войти в систему могут только партнёры и сотрудники фирмы. 
+                        Увійти в систему можуть тільки працівники фірми.
                     </div>
-                    <button onClick={() => setAttention(false)} className={classes.button}>Хорошо</button>
+                    <button onClick={() => setAttention(false)} className={classes.button}>Добре</button>
                 </div>
             </div>
             :

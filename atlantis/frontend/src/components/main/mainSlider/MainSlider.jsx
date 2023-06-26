@@ -13,9 +13,9 @@ const MainSlider = () => {
         id: '04'
     }
 
-    const images = ['review2.PNG', 'review3.PNG', 'review4.PNG', 'review5.PNG', 'review6.PNG', 'review1.jpeg']
+    const images = ['review2.PNG', 'review3.PNG', 'review4.PNG', 'review5.PNG', 'review6.PNG', 'reviews7.PNG', 'reviews8.PNG', 'reviews9.PNG', 'reviews10.PNG']
 
-    const [items, setItems] = useState([1, 2])
+    const [items, setItems] = useState([1, 2, 3, 4, 5, 6])
     const slider = useRef()
 
     const prevHandler = () => {

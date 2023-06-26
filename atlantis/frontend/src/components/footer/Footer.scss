@@ -94,6 +94,15 @@ input::-ms-clear{display: none;}
                 width: 30px;
             }
         }
+        & div{
+            &:last-child{
+                & p{
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
     &__adress{
         margin-top: 30px;
@@ -113,7 +122,16 @@ input::-ms-clear{display: none;}
                 width: 30px;
             }
         }
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+        & div{
+            &:last-child{
+                & p{
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -208,3 +226,4 @@ input::-ms-clear{display: none;}
         }
     }
 }
+

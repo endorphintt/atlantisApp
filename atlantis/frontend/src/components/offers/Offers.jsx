@@ -21,7 +21,7 @@ const Offers = (props) => {
 
     return (
         <div className="offers">
-            <PagesTop name={'наши услуги'} />
+            <PagesTop name={'наші послуги'} />
             <OffersButtons updateOffersItem={props.updateOffersItem}/>
             <OffersContent handleScrollClick={handleScrollClick} offersActiveItem={props.offersActiveItem}/>
             <MainAbout />

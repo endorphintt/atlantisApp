@@ -5,11 +5,16 @@ import FooterBottom from "./footerBottom/FooterBottom";
 import { motion } from 'framer-motion'
 import { textAnimation, textAnimation2 } from "../../animations/animations";
 import { useForm, ValidationError } from "@formspree/react";
+import FooterSuccess from "./footerSuccess/FooterSuccess";
+import { useNavigate } from "react-router-dom";
+import { THANKS_ROUTE } from "../utils/consts";
 
 const Footer = () => {
-    const [state, handleSubmit] = useForm("xqkorkjl");
+    const nav = useNavigate()
+    const [thanks, setThanks] = useState(false)
+    const [state, handleSubmit] = useForm("mvonerba");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        nav(THANKS_ROUTE)
     }
 
     return(
@@ -23,26 +28,37 @@ const Footer = () => {
             <div className="footer__content">
                 <div className="footer__info">
                     <motion.div variants={textAnimation2} className="footer__number">
-                        <div className="footer__number_img"><img src="img/icons2.png" alt="" /></div>
-                        <div>
-                            Наші номери: <br />
-                            Вроцлав: +48732851456 <br />
+                        <div className="footer__number_img"><img src="img/point.png" alt="" /></div>
+                        <div >
+                            <p>Вроцлав:</p>
+                            +48732851456 <br />
                             +48730638088 <br />
-                            Краків:  +48730638088 <br />
-                            Інші міста: +48730638088 
+                            ul. Sucha 2 <br />
+                            kontakt.atlantis@gmail.com
                         </div>
                     </motion.div>
                     <motion.div variants={textAnimation2} className="footer__adress">
-                        <div className="footer__adress_img"><img src="img/icons1.png" alt="" /></div>
+                        <div className="footer__adress_img"><img src="img/point.png" alt="" /></div>
                         <div>
-                            Wrocław, ul. Sucha 2
+                             <p>Краків:</p>
+                            +48790281145 <br />
+                            ul. Mogilska 43 <br />
+                            kontakt.atlantis.kr@gmail.com
+                        </div>
+                    </motion.div>
+                    <motion.div variants={textAnimation2} className="footer__adress">
+                        <div className="footer__adress_img"><img src="img/point.png" alt="" /></div>
+                        <div>
+                            <p>Інші міста:</p>
+                            +48730638088 <br />
+                            kontakt.atlantis@gmail.com
                         </div>
                     </motion.div>
                 </div>
                 <div className="footer__form_container">        
                     <form className="footer__form" onSubmit={handleSubmit}>
                         <motion.div variants={textAnimation} className="form__title">
-                            Залиш свої дані і наші спеціалісти зв'яжуться з тобою.
+                            Залиш свої дані і наші спеціалісти зв'яжуться з тобою
                         </motion.div>
                         <div className="form__items">
                             <div className="form__item">
@@ -104,8 +120,8 @@ const Footer = () => {
                         <button className="form__button" type="submit" disabled={state.submitting}>
                             відправити
                         </button>
-                        </form>
-                </div>                    
+                    </form>
+                </div>            
             </div>
             <FooterBottom />
         </motion.div>

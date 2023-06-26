@@ -7,14 +7,14 @@ import { textAnimation2 } from "../../../animations/animations";
 const OffersButtons = (props) => {
 
     const buttonsData = [
-        {id: 1, name: 'Тимчасовий побит'},
-        {id: 2, name: 'тимчасовий побит укр' },
-        {id: 3, name: 'сталий побит'},
-        {id: 4, name: 'карта резидента'},
-        {id: 5, name: 'Бізнес' },
+        {id: 1, name: 'Тимчасовий побут'},
+        {id: 3, name: 'сталий побут'},
         {id: 6, name: 'громадянство'},
-        {id: 7, name: 'права на водіння'},
-        {id: 8, name: 'реєстрація авто' },
+        {id: 4, name: 'карта резидента'},
+        {id: 2, name: 'статус укр' },
+        {id: 5, name: 'Бізнес' },
+        {id: 7, name: 'для водія'},
+        {id: 8, name: 'шлюб' },
         {id: 9, name: 'нерухомість'},
         {id: 10, name: 'інші послуги'},
     ]

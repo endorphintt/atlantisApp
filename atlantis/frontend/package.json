@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://atlantis.info.pl/",
+  "homepage": "https://atlantis.info.pl/main",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.4.2",

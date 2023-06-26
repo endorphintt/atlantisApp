@@ -12,15 +12,15 @@ const MainOffers = () => {
 
     const cards = [
         {subtitle: 'Тимчасовий побут', deskription: 'Повний супровід до отримання пластику', id: 1},
-        {subtitle: 'Тимчасовий побут UKR', deskription: 'Повний супровід до отримання пластику', id: 2},
-        {subtitle: 'Сталий побут', deskription: 'Повний супровід до отримання пластику', id: 3},
-        {subtitle: 'Карта резидента', deskription: 'Повний супровід до отримання пластику', id: 4},
-        {subtitle: 'Аналіз справи', deskription: 'Супровід до отримання децизії', id: 5},
-        {subtitle: 'Громадянство', deskription: 'Супровід до отримання децизії;', id: 6},
-        {subtitle: 'Для власників авто', deskription: 'Заміна водійського посвідчення Реєстрація авто', id: 7},
-        {subtitle: 'Бізнес', deskription: 'Відкриття ТОВ, Відкриття ФОП', id: 8},
-        {subtitle: 'Для власників авто', deskription: 'Заміна водійського посвідчення Реєстрація авто', id: 9},
-        {subtitle: 'Шлюб', deskription: 'Присяжний переклад, Подача заяви до суду, Розлучення;', id: 10},
+        {subtitle: 'Сталий побут', deskription: 'Повний супровід до отримання пластику', id: 2},
+        {subtitle: 'Карта резидента', deskription: 'Повний супровід до отримання пластику', id: 3},
+        {subtitle: 'Статус укр', deskription: 'Повний супровід', id: 4},
+        {subtitle: 'Громадянство', deskription: 'Супровід до отримання децизії', id: 5},
+        {subtitle: 'Для власників авто', deskription: 'Заміна водійського посвідчення Реєстрація авто', id: 6},
+        {subtitle: 'Бізнес', deskription: 'Відкриття ТОВ, Відкриття ФОП', id: 7},
+        {subtitle: 'Шлюб', deskription: 'Подача заяви до суду, Розлучення', id: 8},
+        {subtitle: 'Нерухомість', deskription: 'Послуги рієлтора, отримання спадщини', id: 9},
+        {subtitle: 'інші послуги', deskription: 'Pesel, PKK, Meldunek та інші', id: 10},
     ]
 
     const [active, setActive] = useState(false)

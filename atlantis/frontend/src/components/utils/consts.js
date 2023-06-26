@@ -7,3 +7,4 @@ export const OFFERS_ROUTE = "/offers"
 export const WEBOFFERS_ROUTE = "/weboffers"
 export const REALESTATE_ROUTE = "/realestate"
 export const ABOUT_ROUTE = "/about"
+export const THANKS_ROUTE = '/thanks'

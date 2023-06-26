@@ -14,16 +14,16 @@ const SecondCard = (props) => {
             onClick={props.handleScrollClick}>
                 <div className="secondCard__item">
                     1000+
-                    довольних
+                    задоволених
                     клієнтів
                 </div>
                 <div className="secondCard__item">
                     25+
-                    видів послуг
+                    послуг
                 </div>
                 <div className="secondCard__item">
-                    365+
-                    випитих кав                  
+                    1000+
+                    вирішених справ                  
                 </div>
             </motion.div>
         </div>

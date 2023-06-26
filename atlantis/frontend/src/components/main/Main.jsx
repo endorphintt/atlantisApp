@@ -32,7 +32,7 @@ const Main = (props) => {
             <SecondCard handleScrollClick={handleScrollClick}/>
             <MainSlider />
             <div className="third-card">
-                <Card name={'Наші спеціалісти допоможуть вирішити вашу проблему якісно та в максимально короткі терміни.'}/>
+                <Card handleScrollClick={handleScrollClick} name={'Наші спеціалісти допоможуть вирішити вашу проблему в максимально короткі терміни.'}/>
             </div>
             <div ref={ref} className="footer">
                 <Footer/>
